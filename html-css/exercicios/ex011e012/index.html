@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midias em html 5</title>
+</head>
+<body>
+    <H1>Imagen dinamica</H1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+
+
+    <audio preload="metadata" autoplay controls >
+        <source src="midia/happymistake.mp3" type="audio/mpeg">
+        <source src="midia/happymistake.ogg" type="audio/ogg">
+        <source src="midia/happymistake.wav" type="audio/wav">
+        
+        <p>Seu navegador não é compativel com audio. <a href="midia/happymistake.mp3"> </a>Clique aqui para baixar</p>
+        
+    </audio>
+    <video src="midia/4328789-uhd_3840_2160_25fps.mp4" width="500" controls></video>
+
+    <h1>Inserindo videos externo</h1>
+    <h1>Video do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LW0bhKitRBk?si=ttzAstS5J4SoIByf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+    
+    <h1>Video do vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/273798604?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="560" height="299" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Animation Rig - #2"></iframe>
+</body>
+</html>
